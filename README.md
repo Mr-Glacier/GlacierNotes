@@ -1,6 +1,9 @@
 ```shell
 GlacierNotes/
 ├── main.py                    # 程序入口
+├── glacier_notes.db           # sqllite 数据库文件
+├── public/
+│   └──notes.ico               # ico 图标
 ├── ui/
 │   └── main_window.py         # 主窗口 UI 构建
 ├── db/

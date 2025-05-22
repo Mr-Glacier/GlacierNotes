@@ -20,7 +20,7 @@ class MainWindow(QMainWindow):
         self.font_size_combo = None
         self.font_combo = None
         self.setWindowTitle("GlacierNotes")
-        self.setWindowIcon(QIcon("./public/notes.ico"))
+        self.setWindowIcon(QIcon("./public/ico_notes.png"))
         self.resize(1200, 800)
 
         # 2.初始化字体设置
