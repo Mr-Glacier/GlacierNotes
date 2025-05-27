@@ -1,3 +1,6 @@
+import os
+import sys
+
 from PyQt5.QtWidgets import (
     QMainWindow, QWidget, QVBoxLayout, QHBoxLayout, QSplitter,
     QTreeWidget, QTreeWidgetItem, QTextEdit, QPushButton, QInputDialog,
@@ -11,6 +14,7 @@ from PyQt5.QtWidgets import QAction, QToolButton
 from models.category_model import CategoryModel
 from models.note_model import NoteModel
 from utils.rich_text_edit import RichTextEdit
+from utils.untils import get_path
 
 
 class MainWindow(QMainWindow):
@@ -20,7 +24,7 @@ class MainWindow(QMainWindow):
         self.font_size_combo = None
         self.font_combo = None
         self.setWindowTitle("GlacierNotes")
-        self.setWindowIcon(QIcon("./public/ico_notes.png"))
+        self.setWindowIcon(QIcon(get_path("public/ico_notes.png")))
         self.resize(1200, 800)
 
         # 2.初始化字体设置
